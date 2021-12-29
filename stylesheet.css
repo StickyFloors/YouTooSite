@@ -5,6 +5,10 @@ body {
     font-size: 16px; 
 }
 
+.videoshell {
+    background-image: url("photoassets/iiif-service_gmd_gmd436_g4363_g4363l_la000024-full-pct_12.5-0-default.jpg");
+}
+
 h1 {
     color: white;
     font-size: 2rem;
@@ -20,7 +24,10 @@ h3 {
     font-size: .75rem;
 }
 
-h4
+hr {
+    width: 2px;
+    color: white;
+}
 
 header {
     max-width: 90%;

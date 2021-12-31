@@ -6,12 +6,56 @@ body {
 }
 
 .videoshell {
-    background-image: url("photoassets/iiif-service_gmd_gmd436_g4363_g4363l_la000024-full-pct_12.5-0-default.jpg");
+    
+    background-image: url("photoassets/high-rez-dtla_postcard.jpeg");
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    align-content: center;
+    border: 8px solid #b87333;
+   
 }
 
+.videobox {
+    padding: 15% 15%;
+    align-content: center;
+}
+
+.filmshell {
+    background-image: url("photoassets/downtown_postcard.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    min-height: 500px;
+    z-index: -1;
+}
+
+.filmbox {
+    margin: 15%;
+    align-content: center;
+    background-color: black;
+    width: 75%;
+    height: 75%;
+    
+}
+
+nav ul{
+    list-style: none;
+    
+}
+
+li {
+    display: inline;
+}
 h1 {
     color: white;
     font-size: 2rem;
+    max-width: 30%;
 }
 
 h2 {
@@ -25,65 +69,25 @@ h3 {
 }
 
 hr {
-    width: 2px;
-    color: white;
+    height: 1px;
+    width: 100px;
+    color:white;
 }
 
 header {
-    max-width: 90%;
-    align-content: left;
-    display: grid; 
-    grid-template-columns: 1 1 1 1 1 1 1 1 1 1 1 1;
-    grid-template-rows: 1 1 1 1 1 1 1;
-    grid-template-areas:
-        "name name name . . . . . . . . ."
-        "name name name . . . . . . . . ."
-        ". . short short short . . . . . . ."
-        ". . . . grant grant grant grant . . . ."
-        ". . . . . dan dan dan dan dan . ."
-        ". . . . . . bside bside bside bside . ."
-        ". . . . . . . history history history history .";
-    grid-row-gap: 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0% 25%;
+    position: relative;
 }
 
-#name {
-    grid-column-start: 0;
-    grid-column-end: span 3; 
-    grid-row-start: 0;
-    grid-row-end: 2;
+nav li {
+    padding: 5px;
 }
 
-#film {
-    grid-column-start: 2;
-    grid-column-end: span 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
 
-#grant {
-    grid-column-start: 4;
-    grid-column-end: span 4; 
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-#dan {
-    grid-column-start: 5;
-    grid-column-end: span 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
-}
-
-#bside {
-    grid-column-start: 6;
-    grid-column-end: span 4;
-    grid-row-start: 5;
-    grid-row-end: 6;
-}
-
-#history {
-    grid-column-start: 7;
-    grid-column-end: span 4; 
-    grid-row-start: 6;
-    grid-row-end: 7;
+#hero {
+    max-width: 1200px;
+    max-height: 425px;
 }

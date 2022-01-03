@@ -5,14 +5,32 @@ body {
     font-size: 16px; 
 }
 
+
+.container {
+    margin-left: 5%;
+    margin-right: 10%;
+    display: flex;
+    
+}
+
+.left_language {
+    justify-content: top;
+    align-content: left;
+    max-width: 5%;
+}
+
 .videoshell {
     
     background-image: url("photoassets/high-rez-dtla_postcard.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: 20px;
     margin-left: 15%;
     margin-right: 15%;
     align-content: center;
     border: 8px solid #b87333;
+    width: 90%;
+    height: 90%;
    
 }
 
@@ -21,8 +39,31 @@ body {
     align-content: center;
 }
 
-.filmshell {
+.lookshell {
     background-image: url("photoassets/downtown_postcard.jpeg");
+    /*background-repeat: no-repeat;
+    /*background-size: cover;*/
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    min-height: 500px;
+    /* z-index: -1; */
+}
+
+.lookbox {
+    margin: 15%;
+    align-content: center;
+    background-color: black;
+    width: 75%;
+    height: 75%;
+    /*z-index: 1 */
+}
+
+.peopleshell{
+    background-image: url("photoassets/LA_Traffic_Map_1924.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 20px;
@@ -35,15 +76,60 @@ body {
     z-index: -1;
 }
 
-.filmbox {
+.peoplebox{
     margin: 15%;
     align-content: center;
     background-color: black;
     width: 75%;
     height: 75%;
-    
+    z-index: 1
 }
 
+.storyshell{
+    background-image: url("photoassets/broadway_postcard.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    min-height: 500px;
+    z-index: -1;
+}
+
+.storybox {
+    margin: 15%;
+    align-content: center;
+    background-color: black;
+    width: 75%;
+    height: 75%;
+    z-index: 1
+}
+
+.placeshell {
+    background-image: url("photoassets/LA_1891_map.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    min-height: 500px;
+    z-index: -1;
+}
+
+.placebox {
+    margin: 15%;
+    align-content: center;
+    background-color: black;
+    width: 75%;
+    height: 75%;
+    z-index: 1
+}
 nav ul{
     list-style: none;
     
@@ -54,13 +140,13 @@ li {
 }
 h1 {
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     max-width: 30%;
 }
 
 h2 {
     color: white;
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 h3 {
